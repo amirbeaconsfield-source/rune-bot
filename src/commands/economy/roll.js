@@ -57,7 +57,7 @@ export default {
     });
 
     await setCooldown(userId, "roll", this.cooldownMs);
-
+      
     let color;
 
     switch (selectedRune.rarity) {
