@@ -19,7 +19,7 @@ export class CommandHandler {
     this.guildId = options.guildId || null;
   }
 
-  buildSlashCommand(command) {
+    buildSlashCommand(command) {
     const builder = new SlashCommandBuilder()
       .setName(command.name)
       .setDescription(command.description || "No description provided");
