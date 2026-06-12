@@ -1,0 +1,46 @@
+{
+  "runes": [
+    {
+      "name": "Common Rune",
+      "luckBoost": 1,
+      "rarity": "Common",
+      "chance": 100,
+      "sellPrice": 15
+    },
+    {
+      "name": "Uncommon Rune",
+      "luckBoost": 3,
+      "rarity": "Uncommon",
+      "chance": 500,
+      "sellPrice": 50
+    },
+    {
+      "name": "Rare Rune",
+      "luckBoost": 8,
+      "rarity": "Rare",
+      "chance": 2000,
+      "sellPrice": 200
+    },
+    {
+      "name": "Legendary Rune",
+      "luckBoost": 18,
+      "rarity": "Legendary",
+      "chance": 5000,
+      "sellPrice": 800
+    },
+    {
+      "name": "Mythic Rune",
+      "luckBoost": 35,
+      "rarity": "Mythic",
+      "chance": 12000,
+      "sellPrice": 3000
+    },
+    {
+      "name": "Cosmic Rune",
+      "luckBoost": 80,
+      "rarity": "Cosmic",
+      "chance": 50000,
+      "sellPrice": 10000
+    }
+  ]
+}
