@@ -3,6 +3,8 @@ import { getInventory } from "../../modules/inventoryHandler.js";
 import { sendReply } from "../../modules/sendReply.js";
 import { formatNumber } from "../../modules/numberFormatter.js";
 
+// Hello World
+
 export default {
   name: "inventory",
   description: "Display your current rune inventory",
@@ -17,7 +19,7 @@ export default {
       });
     }
 
-    const groupedItems = inventory.reduce((map, item) => {
+      const groupedItems = inventory.reduce((map, item) => {
       const key = `${item.name}|${item.rarity ?? "Unknown"}|${item.sellPrice ?? 0}`;
 
       if (!map.has(key)) {
