@@ -1,49 +1,48 @@
 {
-    "format_on_save": "on",
-    "languages": {
-        "JavaScript": {
-            "language_servers": ["biome", "vtsls"],
-            "formatter": {
-                "language_server": {
-                    "name": "biome",
-                },
-            },
-            "code_actions_on_format": {
-                "source.fixAll.biome": true,
-                "source.organizeImports.biome": true,
-            },
-        },
-        "TypeScript": {
-            "language_servers": ["biome", "vtsls"],
-            "formatter": {
-                "language_server": {
-                    "name": "biome",
-                },
-            },
-            "code_actions_on_format": {
-                "source.fixAll.biome": true,
-                "source.organizeImports.biome": true,
-            },
-        },
-        "TSX": {
-            "language_servers": ["biome", "vtsls"],
-            "formatter": {
-                "language_server": {
-                    "name": "biome",
-                },
-            },
-            "code_actions_on_format": {
-                "source.fixAll.biome": true,
-                "source.organizeImports.biome": true,
-            },
-        },
-        "JSON": {
-            "language_servers": ["biome"],
-            "formatter": {
-                "language_server": {
-                    "name": "biome",
-                },
-            },
-        },
-    },
+	"format_on_save": "on",
+	"languages": {
+		"JavaScript": {
+			"language_servers": ["!biome", "vtsls", "eslint"],
+			"formatter": {
+				"external": {
+					"command": "E:\\gator\\node_modules\\.bin\\prettier.cmd",
+					"arguments": ["--stdin-filepath", "{buffer_path}"],
+				},
+			},
+			"code_actions_on_format": {
+				"source.fixAll.eslint": true,
+			},
+		},
+		"TypeScript": {
+			"language_servers": ["!biome", "vtsls", "eslint"],
+			"formatter": {
+				"external": {
+					"command": "E:\\gator\\node_modules\\.bin\\prettier.cmd",
+					"arguments": ["--stdin-filepath", "{buffer_path}"],
+				},
+			},
+			"code_actions_on_format": {
+				"source.fixAll.eslint": true,
+			},
+		},
+		"TSX": {
+			"language_servers": ["!biome", "vtsls", "eslint"],
+			"formatter": {
+				"external": {
+					"command": "E:\\gator\\node_modules\\.bin\\prettier.cmd",
+					"arguments": ["--stdin-filepath", "{buffer_path}"],
+				},
+			},
+			"code_actions_on_format": {
+				"source.fixAll.eslint": true,
+			},
+		},
+		"JSON": {
+			"language_servers": ["!biome"],
+			"formatter": "prettier",
+		},
+	},
+	"prettier": {
+		"allowed": true,
+	},
 }
